@@ -1,4 +1,4 @@
-package NP1;
+package PCMania;
 
 public class Computador {
     String marca;
@@ -7,7 +7,7 @@ public class Computador {
     HardwareBasico RAM = new HardwareBasico();
     HardwareBasico HD = new HardwareBasico();
     HardwareBasico CPU = new HardwareBasico();
-
+    MemoriaUSB MemoriaUSB;
 
 
 
@@ -22,14 +22,11 @@ public class Computador {
         System.out.println("Capacidade do HD: " + HD.capacidade);
         System.out.println("CPU: " + CPU.nome);
         System.out.println("Capacidade da CPU: " + CPU.capacidade);
+        System.out.println("Memória adicional: " + MemoriaUSB.nome + " " + MemoriaUSB.capacidade + " Gb");
         
     }
 
-    void addMemoriaUSB(String nome, int capacidade){
-        MemoriaUSB usb = new MemoriaUSB();
-        usb.nome = nome;
-        usb.capacidade = capacidade;
-        System.out.println("Memória USB: " + usb.nome);
-        System.out.println("Capacidade da Memória USB: " + usb.capacidade);
+    void addMemoriaUSB(MemoriaUSB musb){
+        MemoriaUSB = musb;
     }
 }

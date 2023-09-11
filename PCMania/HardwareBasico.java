@@ -1,4 +1,4 @@
-package NP1;
+package PCMania;
 
 public class HardwareBasico {
     String nome;

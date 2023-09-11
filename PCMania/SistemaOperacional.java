@@ -1,4 +1,4 @@
-package NP1;
+package PCMania;
 
 public class SistemaOperacional {
     String nome;
