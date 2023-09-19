@@ -27,5 +27,6 @@ public class Main {
         conta.sacar(sc.nextDouble());
         conta.extrato();
         
+        sc.close();
     }
 }
